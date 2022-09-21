@@ -12,7 +12,7 @@ entity incremento is
 	);
 end entity;
 
-architecture hard of incremento is
+architecture hard of somador is
 	
 	signal soma_sig: signed(n-1 downto 0);
 	

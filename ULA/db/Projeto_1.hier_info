@@ -1,0 +1,189 @@
+|main
+a[0] => somador:sum.a[0]
+a[0] => subtrator:sub.a[0]
+a[0] => porta_or:p_or.a[0]
+a[0] => porta_and:p_and.a[0]
+a[0] => porta_not:p_not.a[0]
+a[0] => shift:shif.a[0]
+a[1] => somador:sum.a[1]
+a[1] => subtrator:sub.a[1]
+a[1] => porta_or:p_or.a[1]
+a[1] => porta_and:p_and.a[1]
+a[1] => porta_not:p_not.a[1]
+a[1] => shift:shif.a[1]
+a[2] => somador:sum.a[2]
+a[2] => subtrator:sub.a[2]
+a[2] => porta_or:p_or.a[2]
+a[2] => porta_and:p_and.a[2]
+a[2] => porta_not:p_not.a[2]
+a[2] => shift:shif.a[2]
+a[3] => somador:sum.a[3]
+a[3] => subtrator:sub.a[3]
+a[3] => porta_or:p_or.a[3]
+a[3] => porta_and:p_and.a[3]
+a[3] => porta_not:p_not.a[3]
+a[3] => shift:shif.a[3]
+b[0] => somador:sum.b[0]
+b[0] => subtrator:sub.b[0]
+b[0] => porta_or:p_or.b[0]
+b[0] => porta_and:p_and.b[0]
+b[1] => somador:sum.b[1]
+b[1] => subtrator:sub.b[1]
+b[1] => porta_or:p_or.b[1]
+b[1] => porta_and:p_and.b[1]
+b[2] => somador:sum.b[2]
+b[2] => subtrator:sub.b[2]
+b[2] => porta_or:p_or.b[2]
+b[2] => porta_and:p_and.b[2]
+b[3] => somador:sum.b[3]
+b[3] => subtrator:sub.b[3]
+b[3] => porta_or:p_or.b[3]
+b[3] => porta_and:p_and.b[3]
+sel[0] => multiplex:mux.sel[0]
+sel[1] => multiplex:mux.sel[1]
+sel[2] => multiplex:mux.sel[2]
+clk => shift:shif.Clk
+reset => ~NO_FANOUT~
+L => shift:shif.L
+saida[0] <= multiplex:mux.saida[0]
+saida[1] <= multiplex:mux.saida[1]
+saida[2] <= multiplex:mux.saida[2]
+saida[3] <= multiplex:mux.saida[3]
+
+
+|main|somador:sum
+a[0] => Add0.IN4
+a[1] => Add0.IN3
+a[2] => Add0.IN2
+a[3] => Add0.IN1
+b[0] => Add0.IN8
+b[1] => Add0.IN7
+b[2] => Add0.IN6
+b[3] => Add0.IN5
+soma[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+soma[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+soma[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+soma[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex:mux
+a[0] => saida.DATAB
+a[1] => saida.DATAB
+a[2] => saida.DATAB
+a[3] => saida.DATAB
+b[0] => saida.DATAB
+b[1] => saida.DATAB
+b[2] => saida.DATAB
+b[3] => saida.DATAB
+c[0] => saida.DATAB
+c[1] => saida.DATAB
+c[2] => saida.DATAB
+c[3] => saida.DATAB
+d[0] => saida.DATAB
+d[1] => saida.DATAB
+d[2] => saida.DATAB
+d[3] => saida.DATAB
+e[0] => saida.DATAB
+e[1] => saida.DATAB
+e[2] => saida.DATAB
+e[3] => saida.DATAB
+f[0] => saida.DATAA
+f[1] => saida.DATAA
+f[2] => saida.DATAA
+f[3] => saida.DATAA
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN2
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN2
+sel[0] => Equal4.IN2
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN2
+sel[1] => Equal3.IN1
+sel[1] => Equal4.IN1
+sel[2] => Equal0.IN2
+sel[2] => Equal1.IN0
+sel[2] => Equal2.IN0
+sel[2] => Equal3.IN0
+sel[2] => Equal4.IN0
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|subtrator:sub
+a[0] => Add0.IN8
+a[1] => Add0.IN7
+a[2] => Add0.IN6
+a[3] => Add0.IN5
+b[0] => Add0.IN4
+b[1] => Add0.IN3
+b[2] => Add0.IN2
+b[3] => Add0.IN1
+sub[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sub[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sub[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sub[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|porta_or:p_or
+a[0] => z.IN0
+a[1] => z.IN0
+a[2] => z.IN0
+a[3] => z.IN0
+b[0] => z.IN1
+b[1] => z.IN1
+b[2] => z.IN1
+b[3] => z.IN1
+z[0] <= z.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= z.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= z.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|porta_and:p_and
+a[0] => z.IN0
+a[1] => z.IN0
+a[2] => z.IN0
+a[3] => z.IN0
+b[0] => z.IN1
+b[1] => z.IN1
+b[2] => z.IN1
+b[3] => z.IN1
+z[0] <= z.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= z.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= z.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|porta_not:p_not
+a[0] => a_barra[0].DATAIN
+a[1] => a_barra[1].DATAIN
+a[2] => a_barra[2].DATAIN
+a[3] => a_barra[3].DATAIN
+a_barra[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+a_barra[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+a_barra[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+a_barra[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|shift:shif
+a[0] => s.DATAB
+a[1] => s.DATAB
+a[2] => s.DATAB
+a[3] => s.DATAB
+Clk => s[0]~reg0.CLK
+Clk => s[1]~reg0.CLK
+Clk => s[2]~reg0.CLK
+Clk => s[3]~reg0.CLK
+L => s.OUTPUTSELECT
+L => s.OUTPUTSELECT
+L => s.OUTPUTSELECT
+L => s.OUTPUTSELECT
+s[0] <= s[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
