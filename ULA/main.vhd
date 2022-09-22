@@ -9,7 +9,7 @@ entity main is
 	port(
 		  a, b       : in std_logic_vector(n-1 downto 0);
 		  sel        : in natural range 0 to 4;
-		  clk : IN STD_LOGIC;
+		  clk 		 : IN STD_LOGIC;
 		  L          : IN STD_LOGIC;
 		  saida		 : out std_logic_vector(n-1 downto 0)
 	);
@@ -17,15 +17,15 @@ end entity;
 
 architecture hard of main is
 
-		signal c1, c2, c3, c4, c5, c6, c7: std_logic_vector(n-1 downto 0);
+		signal c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 : std_logic_vector(n-1 downto 0);
 --------------------------------------------------------------------------
 		component multiplex 
 		
 		generic ( n : integer := 4); --numero de bits
 		port(
-				a,b,c,d,e,f : in std_logic_vector(n-1 downto 0);
-				sel 		 : in natural range 0 to 4;
-				saida     : out std_logic_vector(n-1 downto 0)
+				a,b,c,d,e,f,g : in std_logic_vector(n-1 downto 0);
+				sel 		 	  : in natural range 0 to 4;
+				saida     	  : out std_logic_vector(n-1 downto 0)
 		);
 		end component;
 -----------------------------------------------------------------------	
@@ -61,7 +61,7 @@ architecture hard of main is
 		generic( n : natural := 4);
 	
 		port(
-				a : in  std_logic_vector(n-1 downto 0);
+				a 		  : in  std_logic_vector(n-1 downto 0);
 				a_barra : out std_logic_vector(n-1 downto 0)
 		);
 		end component;
@@ -81,12 +81,20 @@ architecture hard of main is
 	   generic ( n   : integer := 4);
 	
 	   port(
-			a,b : in  std_logic_vector(n-1 downto 0);
+			a,b 	  : in  std_logic_vector(n-1 downto 0);
 				soma : out std_logic_vector(n-1 downto 0)
 	   );
 
       end component;
 ----------------------------------------------------------------------------
+		component incremento is 
+		generic( n : natural := 4 );
+			
+		port(
+			  a : in  std_logic_vector(n-1 downto 0);
+			  incremento : out std_logic_vector(n-1 downto 0)
+		);
+		end component;
 
 begin
 		sum : somador
@@ -107,6 +115,7 @@ begin
 			d => c4,
 			e => c5,
 			f => c6,
+			g => c7,
 			saida => saida,
 			sel => sel
 		);
@@ -144,6 +153,13 @@ begin
 		port map(
 			a => a,
 			a_barra => c6
+		);
+		
+		inc : incremento
+		generic map( n => n)
+		port map(
+			a => a,
+			incremento => c7
 		);
 		
 		

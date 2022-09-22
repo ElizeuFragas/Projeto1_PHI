@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto_1
-Tue Sep 20 21:12:45 2022
+Thu Sep 22 00:56:23 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,21 +10,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |main
- 11. Parameter Settings for User Entity Instance: somador:sum
- 12. Parameter Settings for User Entity Instance: multiplex:mux
- 13. Parameter Settings for User Entity Instance: subtrator:sub
- 14. Parameter Settings for User Entity Instance: porta_or:p_or
- 15. Parameter Settings for User Entity Instance: porta_and:p_and
- 16. Parameter Settings for User Entity Instance: porta_not:p_not
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -48,27 +34,22 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep 20 21:12:45 2022       ;
-; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name                   ; Projeto_1                                   ;
-; Top-level Entity Name           ; main                                        ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 18                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu Sep 22 00:56:23 2022           ;
+; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name               ; Projeto_1                                   ;
+; Top-level Entity Name       ; main                                        ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -167,194 +148,11 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; subtrator.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd ;         ;
-; somador.vhd                      ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd   ;         ;
-; shift.vhd                        ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift.vhd     ;         ;
-; porta_or.vhd                     ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd  ;         ;
-; porta_not.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd ;         ;
-; porta_and.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd ;         ;
-; multiplex.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd ;         ;
-; main.vhd                         ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                          ;
-+---------------------------------------------+------------------------+
-; Resource                                    ; Usage                  ;
-+---------------------------------------------+------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 9                      ;
-;                                             ;                        ;
-; Combinational ALUT usage for logic          ; 14                     ;
-;     -- 7 input functions                    ; 4                      ;
-;     -- 6 input functions                    ; 0                      ;
-;     -- 5 input functions                    ; 0                      ;
-;     -- 4 input functions                    ; 0                      ;
-;     -- <=3 input functions                  ; 10                     ;
-;                                             ;                        ;
-; Dedicated logic registers                   ; 4                      ;
-;                                             ;                        ;
-; I/O pins                                    ; 18                     ;
-;                                             ;                        ;
-; Total DSP Blocks                            ; 0                      ;
-;                                             ;                        ;
-; Maximum fan-out node                        ; multiplex:mux|Equal4~0 ;
-; Maximum fan-out                             ; 5                      ;
-; Total fan-out                               ; 89                     ;
-; Average fan-out                             ; 1.65                   ;
-+---------------------------------------------+------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |main                      ; 14 (0)              ; 4 (0)                     ; 0                 ; 0          ; 18   ; 0            ; |main               ; main        ; work         ;
-;    |multiplex:mux|         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|multiplex:mux ; multiplex   ; work         ;
-;    |shift:shif|            ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |main|shift:shif    ; shift       ; work         ;
-;    |subtrator:sub|         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|subtrator:sub ; subtrator   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 4     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |main|multiplex:mux|saida[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |main ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; n              ; 4     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somador:sum ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; n              ; 4     ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplex:mux ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; n              ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: subtrator:sub ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; n              ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: porta_or:p_or ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; n              ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: porta_and:p_and ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; n              ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: porta_not:p_not ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; n              ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 4                           ;
-;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 14                          ;
-;     arith             ; 5                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 5                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
-; boundary_port         ; 18                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.40                        ;
-; Average LUT depth     ; 2.34                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:02     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -363,10 +161,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Sep 20 21:12:09 2022
+    Info: Processing started: Thu Sep 22 00:55:58 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_1 -c Projeto_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
+Info (12021): Found 2 design units, including 1 entities, in source file incremento.vhd
+    Info (12022): Found design unit 1: incrementador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incremento.vhd Line: 15
+    Info (12023): Found entity 1: incrementador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incremento.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file decremento.vhd
+    Info (12022): Found design unit 1: decremento-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decremento.vhd Line: 15
+    Info (12023): Found entity 1: decremento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decremento.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file subtrator.vhd
     Info (12022): Found design unit 1: subtrator-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd Line: 15
     Info (12023): Found entity 1: subtrator File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd Line: 6
@@ -395,26 +199,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file main.vh
     Info (12022): Found design unit 1: main-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 18
     Info (12023): Found entity 1: main File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 5
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Info (12128): Elaborating entity "somador" for hierarchy "somador:sum" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 92
-Info (12128): Elaborating entity "multiplex" for hierarchy "multiplex:mux" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 101
-Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:sub" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 115
-Info (12128): Elaborating entity "porta_or" for hierarchy "porta_or:p_or" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 124
-Info (12128): Elaborating entity "porta_and" for hierarchy "porta_and:p_and" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 133
-Info (12128): Elaborating entity "porta_not" for hierarchy "porta_not:p_not" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 142
-Info (12128): Elaborating entity "shift" for hierarchy "shift:shif" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 150
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 12
-Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 14 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Tue Sep 20 21:12:45 2022
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:43
+Info (12128): Elaborating entity "somador" for hierarchy "somador:sum" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 100
+Info (12128): Elaborating entity "multiplex" for hierarchy "multiplex:mux" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 109
+Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:sub" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 124
+Info (12128): Elaborating entity "porta_or" for hierarchy "porta_or:p_or" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 133
+Info (12128): Elaborating entity "porta_and" for hierarchy "porta_and:p_and" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 142
+Info (12128): Elaborating entity "porta_not" for hierarchy "porta_not:p_not" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 151
+Info (12128): Elaborating entity "shift" for hierarchy "shift:shif" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 166
+Error (12006): Node instance "inc" instantiates undefined entity "incremento". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd Line: 158
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4828 megabytes
+    Error: Processing ended: Thu Sep 22 00:56:23 2022
+    Error: Elapsed time: 00:00:25
+    Error: Total CPU time (on all processors): 00:00:40
 
 

@@ -43,12 +43,11 @@ sel[0] => multiplex:mux.sel[0]
 sel[1] => multiplex:mux.sel[1]
 sel[2] => multiplex:mux.sel[2]
 clk => shift:shif.Clk
-reset => ~NO_FANOUT~
 L => shift:shif.L
-saida[0] <= multiplex:mux.saida[0]
-saida[1] <= multiplex:mux.saida[1]
-saida[2] <= multiplex:mux.saida[2]
-saida[3] <= multiplex:mux.saida[3]
+saida[0] << multiplex:mux.saida[0]
+saida[1] << multiplex:mux.saida[1]
+saida[2] << multiplex:mux.saida[2]
+saida[3] << multiplex:mux.saida[3]
 
 
 |main|somador:sum

@@ -6,9 +6,9 @@ entity multiplex is
 	
 
 	port(
-			a,b,c,d,e,f : in std_logic_vector(n-1 downto 0);
-			sel 		 : in natural range 0 to 4;
-			saida     : out std_logic_vector(n-1 downto 0)
+			a,b,c,d,e,f,g : in std_logic_vector(n-1 downto 0);
+			sel 		 	: in natural range 0 to 5;
+			saida     	: out std_logic_vector(n-1 downto 0)
 	
 	);
 end entity;
@@ -21,7 +21,8 @@ begin
 				c when sel=2 else
 				d when sel=3 else
 				e when sel=4 else
-				f;
+				f when sel=5 else
+				g;
 				
 end hard;
 				

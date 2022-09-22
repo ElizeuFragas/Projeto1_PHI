@@ -7,7 +7,7 @@ entity porta_not is
 	generic( n : natural := 4);
 	
 	port(
-			   a : in  std_logic_vector(n-1 downto 0);
+			   a 		  : in  std_logic_vector(n-1 downto 0);
 				a_barra : out std_logic_vector(n-1 downto 0)
 	);
 end porta_not;

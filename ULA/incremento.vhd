@@ -3,25 +3,25 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-entity incremento is 
-	generic( n : natural := 4);
+entity incrementador is 
+	generic( n : natural := 4 );
 	
 	port(
-			   a,b : in  std_logic_vector(n-1 downto 0);
-				soma : out std_logic_vector(n-1 downto 0)
+			   a : in  std_logic_vector(n-1 downto 0);
+				incremento : out std_logic_vector(n-1 downto 0)
 	);
 end entity;
 
-architecture hard of incremento is
+architecture hard of incrementador is
 	
-	signal soma_sig: signed(n-1 downto 0);
+	signal incremento_sig: signed(n-1 downto 0);
 	
 begin
 
-	-- convert para signed e faz a conta
-	soma_sig <= signed(a) + signed(b);
+	-- convert para signed e faz a soma
+	incremento_sig <= signed(a) + signed(std_logic_vector(to_unsigned(1,3)));
 	
 	-- convete para std_logic
-	soma <= std_logic_vector(soma_sig);
+	incrementador <= std_logic_vector(incremento_sig);
 	
-end hard;
+end architecture;
