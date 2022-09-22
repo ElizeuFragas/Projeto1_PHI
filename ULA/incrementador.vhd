@@ -22,6 +22,6 @@ begin
 	incremento_sig <= signed(a) + signed(std_logic_vector(to_unsigned(1,3)));
 	
 	-- convete para std_logic
-	incrementador <= std_logic_vector(incremento_sig);
+	incremento <= std_logic_vector(incremento_sig);
 	
 end architecture;
