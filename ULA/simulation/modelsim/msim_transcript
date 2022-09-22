@@ -1,5 +1,5 @@
 # Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-# do Projeto_1_run_msim_rtl_vhdl.do
+# do ULA_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,9 +10,21 @@
 # Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:14 on Sep 22,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ULA
+# -- Compiling architecture hard of ULA
+# End time: 19:23:14 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:55 on Sep 22,2022
+# Start time: 19:23:14 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity subtrator
 # -- Compiling architecture hard of subtrator
-# End time: 00:43:56 on Sep 22,2022, Elapsed time: 0:00:01
+# End time: 19:23:14 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:56 on Sep 22,2022
+# Start time: 19:23:14 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,33 +44,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity somador
 # -- Compiling architecture hard of somador
-# End time: 00:43:56 on Sep 22,2022, Elapsed time: 0:00:00
+# End time: 19:23:15 on Sep 22,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:56 on Sep 22,2022
+# Start time: 19:23:15 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity shift
 # -- Compiling architecture hard of shift
-# End time: 00:43:56 on Sep 22,2022, Elapsed time: 0:00:00
+# End time: 19:23:15 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:56 on Sep 22,2022
+# Start time: 19:23:15 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity porta_or
 # -- Compiling architecture hard of porta_or
-# End time: 00:43:56 on Sep 22,2022, Elapsed time: 0:00:00
+# End time: 19:23:15 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:56 on Sep 22,2022
+# Start time: 19:23:15 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -66,73 +78,55 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity porta_not
 # -- Compiling architecture hard of porta_not
-# End time: 00:43:56 on Sep 22,2022, Elapsed time: 0:00:00
+# End time: 19:23:15 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:56 on Sep 22,2022
+# Start time: 19:23:15 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity porta_and
 # -- Compiling architecture hard of porta_and
-# End time: 00:43:56 on Sep 22,2022, Elapsed time: 0:00:00
+# End time: 19:23:15 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:56 on Sep 22,2022
+# Start time: 19:23:16 on Sep 22,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity multiplex
 # -- Compiling architecture hard of multiplex
-# End time: 00:43:57 on Sep 22,2022, Elapsed time: 0:00:01
+# End time: 19:23:16 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incrementador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:43:57 on Sep 22,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/main.vhd 
+# Start time: 19:23:16 on Sep 22,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incrementador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity main
-# -- Compiling architecture hard of main
-# End time: 00:43:57 on Sep 22,2022, Elapsed time: 0:00:00
+# -- Compiling entity incrementador
+# -- Compiling architecture hard of incrementador
+# End time: 19:23:16 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.main
-# vsim work.main 
-# Start time: 00:44:01 on Sep 22,2022
+vsim work.porta_or
+# vsim work.porta_or 
+# Start time: 19:24:05 on Sep 22,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.main(hard)
-# Loading work.somador(hard)
-# Loading work.multiplex(hard)
-# Loading work.subtrator(hard)
 # Loading work.porta_or(hard)
-# Loading work.porta_and(hard)
-# Loading work.porta_not(hard)
-# Loading work.shift(hard)
-wave create -driver freeze -pattern constant -value 0001 -range 3 0 -starttime 0ps -endtime 1000ps sim:/main/a
+wave create -driver freeze -pattern constant -value 0110 -range 3 0 -starttime 0ps -endtime 1000ps sim:/porta_or/a
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern constant -value 1001 -range 3 0 -starttime 0ps -endtime 1000ps sim:/main/b
+wave create -driver freeze -pattern constant -value 1000 -range 3 0 -starttime 0ps -endtime 1000ps sim:/porta_or/b
 add wave -position insertpoint  \
-sim:/main/saida
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Enf  Hostname: DESKTOP-N4BIB11  ProcessID: 12264
-#           Attempting to use alternate WLF file "./wlfttk95q9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttk95q9
+sim:/porta_or/z
 run
-restart
-wave create -driver freeze -pattern constant -value 1100 -range 3 0 -starttime 0ps -endtime 1000ps sim:/main/a
-# /main/a already exists in the wave, cannot add twice
-# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
-# See Command Reference manual for pattern specific <args>
-# End time: 00:45:30 on Sep 22,2022, Elapsed time: 0:01:29
-# Errors: 1, Warnings: 2
+# End time: 19:25:01 on Sep 22,2022, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
