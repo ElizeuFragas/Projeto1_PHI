@@ -4,171 +4,202 @@ use ieee.numeric_std.all;
 
 entity ULA is 
 
-	generic( n : integer := 4);
+	generic( nbits : integer := 4);
 	
 	port(
-		  a, b       : in std_logic_vector(n-1 downto 0);
-		  sel        : in natural range 0 to 9;
-		  clk 		 : IN STD_LOGIC;
-		  L          : IN STD_LOGIC;
-		  saida		 : out std_logic_vector(n-1 downto 0)
+			a, b  : in std_logic_vector(nbits-1 downto 0);
+			sel   : in natural range 0 to 9;
+			saida	: out std_logic_vector(nbits-1 downto 0)
 	);
 end entity;
 
-architecture hard of ULA is
-
-		signal c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 : std_logic_vector(n-1 downto 0);
---------------------------------------------------------------------------
-		component multiplex 
+architecture op of ULA is
+	
+	signal c1, c2, c3, c4, c5, c6, c7, c8, c9 : std_logic_vector(nbits-1 downto 0);
+	-------------------------------------------------------------------------
+	component multiplex 
+	
+	generic ( nbits : integer := 4); --numero de bits
+	port(
+			a, b, c, d, e, f, g, h, i : in std_logic_vector(nbits-1 downto 0);
+			sel 		 	      		  : in natural range 0 to 4;
+			saida     	        		  : out std_logic_vector(nbits-1 downto 0)
+	);
+	end component;
+	---------------------------------------------------------------------------
+	component somador is 
+	generic ( nbits   : integer := 4);
 		
-		generic ( n : integer := 4); --numero de bits
-		port(
-				a, b, c, d, e, f, g : in std_logic_vector(n-1 downto 0);
-				sel 		 	        : in natural range 0 to 4;
-				saida     	        : out std_logic_vector(n-1 downto 0)
-		);
-		end component;
------------------------------------------------------------------------	
-		component porta_and 
-	
-		generic ( n : integer := 4);
-		port(
-				a, b : in std_logic_vector(n-1 downto 0);
-				z	  :   out std_logic_vector(n-1 downto 0)
-		);
-		end component;
-------------------------------------------------------------------------
-		component porta_or 
-
-		generic ( n : integer := 4);
-		port(
-				a, b : in std_logic_vector(n-1 downto 0);
-				z	  :   out std_logic_vector(n-1 downto 0)
-		);
-	
-		end component;
--------------------------------------------------------------------------
-		component subtrator 
+	port(
+			a, b : in  std_logic_vector(nbits-1 downto 0);
+			soma : out std_logic_vector(nbits-1 downto 0)
+	); 	
+	end component;
+	--------------------------------------------------------------------------
+	component subtrator 
 		
-		generic( n : natural := 4);
-		port(
-			   a, b : in  std_logic_vector(n-1 downto 0);
-				sub : out std_logic_vector(n-1 downto 0)
-		);
-		end component;
--------------------------------------------------------------------------
-		component porta_not is 
-		generic( n : natural := 4);
+	generic( nbits : natural := 4);
+	port(
+		 	a, b : in  std_logic_vector(nbits-1 downto 0);
+		 	sub  : out std_logic_vector(nbits-1 downto 0)
+	);
+    end component;
+	-----------------------------------------------------------------------	
+	component porta_and 
 	
-		port(
-				a 		  : in  std_logic_vector(n-1 downto 0);
-				a_barra : out std_logic_vector(n-1 downto 0)
-		);
-		end component;
-----------------------------------------------------------------------------
-		component shift 
+	generic ( nbits : integer := 4);
+	port(
+			a, b : in std_logic_vector(nbits-1 downto 0);
+			z	  : out std_logic_vector(nbits-1 downto 0)
+	);
+	end component;
+	------------------------------------------------------------------------
+	component porta_or 
 
-		PORT (    
-				a   : IN STD_LOGIC_VECTOR(3 DOWNTO 0) ;
-			   Clk : IN STD_LOGIC ;
-			   L   : IN STD_LOGIC ;
-				s   : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0) 
-		) ;
+	generic ( nbits : integer := 4);
+	port(
+			a, b : in std_logic_vector(nbits-1 downto 0);
+			z	  : out std_logic_vector(nbits-1 downto 0)
+	);
+	
+	end component;
+    -------------------------------------------------------------------------
+	component porta_not is 
+	generic( nbits : natural := 4);
+		
+	port(
+		 	a 		  : in  std_logic_vector(nbits-1 downto 0);
+		 	a_barra : out std_logic_vector(nbits-1 downto 0)
+	);
+	end component;
+	----------------------------------------------------------------------------
+	component shift_r is
+		generic(
+			nbits : integer := 4;
+			shift : integer := 1
+		);
+		port(
+			a 			 : in std_logic_vector(nbits-1 downto 0);
+			a_shifted : out std_logic_vector(nbits-1 downto 0)
+		);
+	end component;
+	----------------------------------------------------------------------------
+	component shift_l is
+		generic(
+			nbits     : integer := 4;
+			shift : integer := 1
+		);
+		port(
+			a 			 : in std_logic_vector(nbits-1 downto 0);
+			a_shifted : out std_logic_vector(nbits-1 downto 0)
+		);
+	end component;
+	----------------------------------------------------------------------------
+	component incrementador is 
+	generic( nbits : natural := 4 );
 			
-		END component ;
----------------------------------------------------------------------------
-		component somador is 
-	   generic ( n   : integer := 4);
+	port(
+			a          : in  std_logic_vector(nbits-1 downto 0);
+			incremento : out std_logic_vector(nbits-1 downto 0)
+	);
+	end component;
+	----------------------------------------------------------------------------
+	component decrementador is 
+	generic( nbits : natural := 4 );
 	
-	   port(
-			  a, b 	  : in  std_logic_vector(n-1 downto 0);
-			  soma     : out std_logic_vector(n-1 downto 0)
-	   ); 
+	port(
+			a          : in  std_logic_vector(nbits-1 downto 0);
+			decremento : out std_logic_vector(nbits-1 downto 0)
+	);
+	end component;
 
-      end component;
-----------------------------------------------------------------------------
-		component incrementador is 
-		generic( n : natural := 4 );
-			
-		port(
-			  a          : in  std_logic_vector(n-1 downto 0);
-			  incremento : out std_logic_vector(n-1 downto 0)
-		);
-		end component;
-
-begin
-		sum : somador
-		generic map( n => n)
-		port map(
-			a => a,
-			b => b,
-			soma => c1
-		);
-		
-		
+	begin
 		mux : multiplex
-		generic map( n => n)
+		--generic map( nbits => nbits)
 		port map(
-			a => c1,
-			b => c2,
-			c => c3,
-			d => c4,
-			e => c5,
-			f => c6,
-			g => c7,
-			saida => saida,
-			sel => sel
+					a     => c1,
+					b     => c2,
+					c     => c3,
+					d     => c4,
+					e     => c5,
+					f     => c6,
+					g     => c7,
+					h     => c8,
+					i     => c9,
+					saida => saida,
+					sel   => sel
 		);
-		
-		
-		sub : subtrator
-		generic map( n => n)
-		port map(
-			a => a,
-			b => b,
-			sub => c2
-		);
-		
 
-		p_or : porta_or
-		generic map( n => n)
+		sum : somador
+		generic map( nbits => nbits)
 		port map(
-			a => a,
-			b => b,
-			z => c3
+					a    => a,
+					b    => b,
+					soma => c1
 		);
-		
+				
+		sub : subtrator
+		generic map( nbits => nbits)
+		port map(
+					a   => a,
+					b   => b,
+					sub => c2
+		);
 		
 		p_and : porta_and
-		generic map( n => n)
+		generic map( nbits => nbits)
 		port map(
-			a => a,
-			b => b,
-			z => c4
+					a => a,
+					b => b,
+					z => c3
 		);
-		
+
+		p_or : porta_or
+		generic map( nbits => nbits)
+		port map(
+					a => a,
+					b => b,
+					z => c4
+		);
 		
 		p_not : porta_not
-		generic map( n => n)
+		generic map( nbits => nbits)
 		port map(
-			a => a,
-			a_barra => c6
+					a       => a,
+					a_barra => c5
 		);
 		
+		shift1 : shift_r
+		generic map( nbits => nbits,
+						 shift => 1						
+		)
+		port map(
+					a         => a,
+					a_shifted => c6
+		);
+
+		shift2 : shift_l
+		generic map( nbits => nbits,
+						 shift => 1						
+		)
+		port map(
+					a         => a,
+					a_shifted => c7
+		);
+
 		inc : incrementador
-		generic map( n => n)
+		generic map( nbits => nbits)
 		port map(
-			a => a,
-			incremento => c7
+					a          => a,
+					incremento => c8
 		);
 		
+		dec : decrementador
+		generic map( nbits => nbits)
+		port map(
+					a          => a,
+					decremento => c9
+		);
+
 		
-		shif : shift
-			port map(
-			L => L,  -- habilitador
-			clk => clk,
-			a => a,
-			s => c5
-			);
-		
-end hard;
+end op;

@@ -3,11 +3,11 @@ use ieee.std_logic_1164.all;
 
 entity porta_and is
 	
-	generic ( n : integer := 4);
+	generic ( nbits : integer );
 	
 	port(
-	a ,b : in std_logic_vector(n-1 downto 0);
-	z	  :   out std_logic_vector(n-1 downto 0)
+	      a, b : in std_logic_vector(nbits-1 downto 0);
+	      z	  :   out std_logic_vector(nbits-1 downto 0)
 	
 	);
 	
@@ -16,6 +16,7 @@ end entity;
 architecture hard of porta_and is
 
 begin
-  z <= a and b;
   
- end hard;
+    z <= a and b;
+  
+end hard;

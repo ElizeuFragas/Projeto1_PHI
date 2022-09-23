@@ -4,17 +4,17 @@ use ieee.numeric_std.all;
 
 
 entity incrementador is 
-	generic( n : natural := 4 );
+	generic( nbits : natural );
 	
 	port(
-			   a : in  std_logic_vector(n-1 downto 0);
-				incremento : out std_logic_vector(n-1 downto 0)
+			   a : in  std_logic_vector(nbits-1 downto 0);
+				incremento : out std_logic_vector(nbits-1 downto 0)
 	);
 end entity;
 
 architecture hard of incrementador is
 	
-	signal incremento_sig: signed(n-1 downto 0);
+	signal incremento_sig: signed(nbits-1 downto 0);
 	
 begin
 

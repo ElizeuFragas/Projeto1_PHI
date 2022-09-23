@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;               -- Needed for shifts
+
+-- Entidade
+entity shift_left is
+	generic( n : natural := 4);
+	port(
+		a         : in  std_logic_vector(n-1 downto 0);
+		resultado : out std_logic_vector(n-1 downto 0)
+end shift_left;
+ 
+architecture main of shift_left is
+	signal resultado_sig : std_logic_vector(3 downto 0);
+	signal r_Unsigned_L  : unsigned(3 downto 0);
+   
+begin
+ 
+  process is
+  begin
+    -- deslocamento de 1 bit para esquerda
+    r_Unsigned_L <= shift_left(unsigned(resultado_sig), 1);
+    resultado_sig   <= shift_left(signedresultado_sig), 1);
+	resultado <= std_logic_vector(resultado_sig);
+ 
+  end process;
+end architecture main;

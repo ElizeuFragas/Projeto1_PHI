@@ -4,17 +4,17 @@ use ieee.numeric_std.all;
 
 
 entity somador is 
-	generic( n : natural := 4);
+	generic( nbits : natural );
 	
 	port(
-			   a,b : in  std_logic_vector(n-1 downto 0);
-				soma : out std_logic_vector(n-1 downto 0)
+			   a,b : in  std_logic_vector(nbits-1 downto 0);
+				soma : out std_logic_vector(nbits-1 downto 0)
 	);
 end entity;
 
 architecture hard of somador is
 	
-	signal soma_sig: signed(n-1 downto 0);
+	signal soma_sig: signed(nbits-1 downto 0);
 	
 begin
 
