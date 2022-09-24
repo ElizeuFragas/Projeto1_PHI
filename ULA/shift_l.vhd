@@ -7,12 +7,13 @@ entity shift_l is
 		nbits     : integer := 4;
 		shift : integer := 1
 	);
+	-- Declação das entradas e saída
 	port(
 		a 			 : in std_logic_vector(nbits-1 downto 0);
 		a_shifted : out std_logic_vector(nbits-1 downto 0)
 	);
 end shift_l;
-
+-- Declação da arquitetura
 architecture comportamento of shift_l is
 
 begin

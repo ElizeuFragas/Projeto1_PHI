@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity porta_and is
 	
 	generic ( nbits : integer );
-	
+	-- Declação das entradas e saída
 	port(
 	      a, b : in std_logic_vector(nbits-1 downto 0);
 	      z	  :   out std_logic_vector(nbits-1 downto 0)
@@ -12,7 +12,7 @@ entity porta_and is
 	);
 	
 end entity;
-
+-- Declação da arquitetura
 architecture hard of porta_and is
 
 begin

@@ -5,15 +5,15 @@ use ieee.numeric_std.all;
 
 entity porta_not is 
 	generic( nbits : natural );
-	
+	-- Declação das entradas e saída
 	port(
 			   a 		  : in  std_logic_vector(nbits-1 downto 0);
 				a_barra : out std_logic_vector(nbits-1 downto 0)
 	);
 end porta_not;
-
+-- Declação da	 arquitetura
 architecture hard of porta_not is
-	
+				
 	signal sub_sig: std_logic_vector(nbits-1 downto 0);
 	
 begin

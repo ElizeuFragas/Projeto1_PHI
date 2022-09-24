@@ -5,13 +5,13 @@ use ieee.numeric_std.all;
 
 entity somador is 
 	generic( nbits : natural );
-	
+	-- Declação das entradas e saída
 	port(
 			   a,b : in  std_logic_vector(nbits-1 downto 0);
 				soma : out std_logic_vector(nbits-1 downto 0)
 	);
 end entity;
-
+-- Declação da arquitetura
 architecture hard of somador is
 	
 	signal soma_sig: signed(nbits-1 downto 0);

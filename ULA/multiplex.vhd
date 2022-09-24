@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity multiplex is 
 	generic ( nbits : integer );
-	
+	-- Declação das entradas e saída
 	port(
 			a, b, c, d, e, f, g, h, i: in std_logic_vector(nbits-1 downto 0);
 			sel 		 	             : in natural range 0 to 8;
@@ -12,7 +12,7 @@ entity multiplex is
 end entity;
 
 architecture hard of multiplex is 
-
+-- Declação da arquitetura
 begin
 	saida  <=  a when sel=0 else
 			   b when sel=1 else

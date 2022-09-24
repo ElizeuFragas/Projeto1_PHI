@@ -5,14 +5,14 @@ use ieee.numeric_std.all;
 entity ULA is 
 
 	generic( nbits : integer := 4);
-	
+	-- Declação das entradas e saída
 	port(
 			a, b  : in std_logic_vector(nbits-1 downto 0);
 			sel   : in natural range 0 to 8;
 			saida	: out std_logic_vector(nbits-1 downto 0)
 	);
 end entity;
-
+-- Declação da arquitetura
 architecture op of ULA is
 	
 	signal c1, c2, c3, c4, c5, c6, c7, c8, c9 : std_logic_vector(nbits-1 downto 0);
@@ -112,7 +112,7 @@ architecture op of ULA is
 			decremento : out std_logic_vector(nbits-1 downto 0)
 	);
 	end component;
-
+	-- Instanciações
 	begin
 		mux : multiplex
 		generic map( nbits => nbits)
