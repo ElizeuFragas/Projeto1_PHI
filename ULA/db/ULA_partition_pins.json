@@ -20,19 +20,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "sel[2]",
-					"strict" : false
-				},
-				{
-					"name" : "a[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sel[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sel[0]",
+					"name" : "a[1]",
 					"strict" : false
 				},
 				{
@@ -40,7 +28,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[3]",
 					"strict" : false
 				},
 				{
@@ -52,11 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[3]",
+					"name" : "b[2]",
 					"strict" : false
 				},
 				{
-					"name" : "b[2]",
+					"name" : "a[3]",
 					"strict" : false
 				},
 				{
