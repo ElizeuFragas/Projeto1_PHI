@@ -22,7 +22,7 @@ architecture op of ULA is
 	generic ( nbits : integer := 4); --numero de bits
 	port(
 			a, b, c, d, e, f, g, h, i : in std_logic_vector(nbits-1 downto 0);
-			sel 		 	      		  : in natural range 0 to 4;
+			sel 		 	      		  : in natural range 0 to 8;
 			saida     	        		  : out std_logic_vector(nbits-1 downto 0)
 	);
 	end component;
@@ -115,7 +115,7 @@ architecture op of ULA is
 
 	begin
 		mux : multiplex
-		--generic map( nbits => nbits)
+		generic map( nbits => nbits)
 		port map(
 					a     => c1,
 					b     => c2,
