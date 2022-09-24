@@ -67,5 +67,5 @@ set_global_assignment -name VHDL_FILE decrementador.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE shift_r.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Wave.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

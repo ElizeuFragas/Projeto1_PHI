@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ULA
-Fri Sep 23 16:13:53 2022
+Sat Sep 24 12:49:02 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -48,7 +48,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Sep 23 16:13:53 2022       ;
+; Analysis & Elaboration Status ; Successful - Sat Sep 24 12:49:02 2022       ;
 ; Quartus Prime Version         ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                 ; ULA                                         ;
 ; Top-level Entity Name         ; ULA                                         ;
@@ -284,61 +284,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 23 16:13:20 2022
+    Info: Processing started: Sat Sep 24 12:48:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 2 design units, including 1 entities, in source file shift_l.vhd
-    Info (12022): Found design unit 1: shift_l-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_l.vhd Line: 16
-    Info (12023): Found entity 1: shift_l File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_l.vhd Line: 5
+    Info (12022): Found design unit 1: shift_l-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 16
+    Info (12023): Found entity 1: shift_l File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_tb.vhd
-    Info (12022): Found design unit 1: main_tb-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA_tb.vhd Line: 9
-    Info (12023): Found entity 1: main_tb File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA_tb.vhd Line: 6
+    Info (12022): Found design unit 1: main_tb-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 9
+    Info (12023): Found entity 1: main_tb File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-op File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 16
-    Info (12023): Found entity 1: ULA File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-op File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 16
+    Info (12023): Found entity 1: ULA File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file subtrator.vhd
-    Info (12022): Found design unit 1: subtrator-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd Line: 15
-    Info (12023): Found entity 1: subtrator File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd Line: 6
+    Info (12022): Found design unit 1: subtrator-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd Line: 15
+    Info (12023): Found entity 1: subtrator File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd Line: 15
-    Info (12023): Found entity 1: somador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd Line: 6
+    Info (12022): Found design unit 1: somador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd Line: 15
+    Info (12023): Found entity 1: somador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file porta_or.vhd
-    Info (12022): Found design unit 1: porta_or-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd Line: 16
-    Info (12023): Found entity 1: porta_or File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd Line: 4
+    Info (12022): Found design unit 1: porta_or-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd Line: 16
+    Info (12023): Found entity 1: porta_or File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file porta_not.vhd
-    Info (12022): Found design unit 1: porta_not-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd Line: 15
-    Info (12023): Found entity 1: porta_not File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd Line: 6
+    Info (12022): Found design unit 1: porta_not-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd Line: 15
+    Info (12023): Found entity 1: porta_not File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file porta_and.vhd
-    Info (12022): Found design unit 1: porta_and-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd Line: 16
-    Info (12023): Found entity 1: porta_and File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd Line: 4
+    Info (12022): Found design unit 1: porta_and-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd Line: 16
+    Info (12023): Found entity 1: porta_and File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file multiplex.vhd
-    Info (12022): Found design unit 1: multiplex-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd Line: 14
-    Info (12023): Found entity 1: multiplex File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd Line: 4
+    Info (12022): Found design unit 1: multiplex-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd Line: 14
+    Info (12023): Found entity 1: multiplex File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file incrementador.vhd
-    Info (12022): Found design unit 1: incrementador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incrementador.vhd Line: 15
-    Info (12023): Found entity 1: incrementador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incrementador.vhd Line: 6
+    Info (12022): Found design unit 1: incrementador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd Line: 15
+    Info (12023): Found entity 1: incrementador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file decrementador.vhd
-    Info (12022): Found design unit 1: decrementador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decrementador.vhd Line: 15
-    Info (12023): Found entity 1: decrementador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decrementador.vhd Line: 6
+    Info (12022): Found design unit 1: decrementador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd Line: 15
+    Info (12023): Found entity 1: decrementador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file shift_r.vhd
-    Info (12022): Found design unit 1: shift_r-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd Line: 16
-    Info (12023): Found entity 1: shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd Line: 5
+    Info (12022): Found design unit 1: shift_r-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 16
+    Info (12023): Found entity 1: shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 5
 Info (12127): Elaborating entity "ULA" for the top level hierarchy
-Info (12128): Elaborating entity "multiplex" for hierarchy "multiplex:mux" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 117
-Info (12128): Elaborating entity "somador" for hierarchy "somador:sum" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 133
-Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:sub" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 141
-Info (12128): Elaborating entity "porta_and" for hierarchy "porta_and:p_and" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 149
-Info (12128): Elaborating entity "porta_or" for hierarchy "porta_or:p_or" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 157
-Info (12128): Elaborating entity "porta_not" for hierarchy "porta_not:p_not" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 165
-Info (12128): Elaborating entity "shift_r" for hierarchy "shift_r:shift1" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 172
-Info (12128): Elaborating entity "shift_l" for hierarchy "shift_l:shift2" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 181
-Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:inc" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 190
-Info (12128): Elaborating entity "decrementador" for hierarchy "decrementador:dec" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd Line: 197
+Info (12128): Elaborating entity "multiplex" for hierarchy "multiplex:mux" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 117
+Info (12128): Elaborating entity "somador" for hierarchy "somador:sum" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 133
+Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:sub" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 141
+Info (12128): Elaborating entity "porta_and" for hierarchy "porta_and:p_and" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 149
+Info (12128): Elaborating entity "porta_or" for hierarchy "porta_or:p_or" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 157
+Info (12128): Elaborating entity "porta_not" for hierarchy "porta_not:p_not" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 165
+Info (12128): Elaborating entity "shift_r" for hierarchy "shift_r:shift1" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 172
+Info (12128): Elaborating entity "shift_l" for hierarchy "shift_l:shift2" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 181
+Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:inc" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 190
+Info (12128): Elaborating entity "decrementador" for hierarchy "decrementador:dec" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 197
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Fri Sep 23 16:13:53 2022
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Sat Sep 24 12:49:02 2022
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:38
 
 

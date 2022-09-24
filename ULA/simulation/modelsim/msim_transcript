@@ -10,258 +10,139 @@
 # Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_l.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:16 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_l.vhd 
+# Start time: 12:52:57 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity shift_l
 # -- Compiling architecture comportamento of shift_l
-# End time: 16:14:16 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:57 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:16 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/ULA.vhd 
+# Start time: 12:52:57 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture op of ULA
-# End time: 16:14:16 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:57 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:16 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd 
+# Start time: 12:52:57 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity subtrator
 # -- Compiling architecture hard of subtrator
-# End time: 16:14:16 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:57 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:17 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd 
+# Start time: 12:52:57 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity somador
 # -- Compiling architecture hard of somador
-# End time: 16:14:17 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:58 on Sep 24,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:17 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_or.vhd 
+# Start time: 12:52:58 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity porta_or
 # -- Compiling architecture hard of porta_or
-# End time: 16:14:17 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:58 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:17 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_not.vhd 
+# Start time: 12:52:58 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity porta_not
 # -- Compiling architecture hard of porta_not
-# End time: 16:14:17 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:58 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:17 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/porta_and.vhd 
+# Start time: 12:52:58 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity porta_and
 # -- Compiling architecture hard of porta_and
-# End time: 16:14:17 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:58 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:17 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd 
+# Start time: 12:52:58 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity multiplex
 # -- Compiling architecture hard of multiplex
-# End time: 16:14:18 on Sep 23,2022, Elapsed time: 0:00:01
+# End time: 12:52:58 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incrementador.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:18 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/incrementador.vhd 
+# Start time: 12:52:58 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity incrementador
 # -- Compiling architecture hard of incrementador
-# End time: 16:14:18 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:59 on Sep 24,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decrementador.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:18 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decrementador.vhd 
+# Start time: 12:52:59 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity decrementador
 # -- Compiling architecture hard of decrementador
-# End time: 16:14:18 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:59 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd}
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:14:18 on Sep 23,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd 
+# Start time: 12:52:59 on Sep 24,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity shift_r
 # -- Compiling architecture comportamento of shift_r
-# End time: 16:14:18 on Sep 23,2022, Elapsed time: 0:00:00
+# End time: 12:52:59 on Sep 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.shift_r
-# vsim work.shift_r 
-# Start time: 16:14:26 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shift_r(comportamento)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd Line: 7
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:14:26 on Sep 23,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vsim work.shift_r
-# vsim work.shift_r 
-# Start time: 16:14:37 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shift_r(comportamento)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd Line: 7
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:14:38 on Sep 23,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vsim work.shift_l
-# vsim work.shift_l 
-# Start time: 16:14:42 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shift_l(comportamento)
-quit -sim
-# End time: 16:15:42 on Sep 23,2022, Elapsed time: 0:01:00
-# Errors: 0, Warnings: 0
-vsim work.shift_r
-# vsim work.shift_r 
-# Start time: 16:15:46 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shift_r(comportamento)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd Line: 7
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:15:46 on Sep 23,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vsim work.shift_r
-# vsim work.shift_r 
-# Start time: 16:15:54 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shift_r(comportamento)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/shift_r.vhd Line: 7
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:15:54 on Sep 23,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vsim work.somador
-# vsim work.somador 
-# Start time: 16:17:01 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.somador(hard)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /somador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/somador.vhd Line: 7
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:17:02 on Sep 23,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vsim work.subtrator
-# vsim work.subtrator 
-# Start time: 16:17:06 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.subtrator(hard)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /subtrator File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/subtrator.vhd Line: 7
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:17:06 on Sep 23,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vsim work.multiplex
-# vsim work.multiplex 
-# Start time: 16:17:11 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.multiplex(hard)
-# ** Fatal: (vsim-3350) Generic "nbits" has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /multiplex File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/multiplex.vhd Line: 5
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:17:11 on Sep 23,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vsim work.shift_l
-# vsim work.shift_l 
-# Start time: 16:17:15 on Sep 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shift_l(comportamento)
-quit -sim
-# End time: 16:17:52 on Sep 23,2022, Elapsed time: 0:00:37
-# Errors: 0, Warnings: 0
 vsim work.ula
 # vsim work.ula 
-# Start time: 16:17:56 on Sep 23,2022
+# Start time: 12:53:04 on Sep 24,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -277,26 +158,14 @@ vsim work.ula
 # Loading work.shift_l(comportamento)
 # Loading work.incrementador(hard)
 # Loading work.decrementador(hard)
-wave create -driver freeze -pattern constant -value 1000 -range 3 0 -starttime 0ps -endtime 1000ps sim:/ula/a
+wave create -driver freeze -pattern constant -value 0010 -range 3 0 -starttime 0ps -endtime 1000ps sim:/ula/a
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+force -freeze sim:/ula/sel 8 0
 add wave -position insertpoint  \
 sim:/ula/saida
-force -freeze sim:/ula/sel 5 0
 run
-force -freeze Edit:/ula/a 0100 0
-# ** Error (suppressible): (vsim-4008) Object 'Edit:/ula/a' not found.
-# 
-wave modify -driver freeze -pattern constant -value 0100 -range 3 0 -starttime 0ps -endtime 1000ps Edit:/ula/a
 run
-force -freeze sim:/ula/sel 1 0
-restart
-add wave  \
-sim:/ula/sel
-force -freeze sim:/ula/sel 8 0
-# ** Fatal: (vsim-3421) Value 8 for sel is out of range 0 to 5.
-#    Time: 0 ps  Iteration: 0  Process: /ula/dec/line__25 File: C:/Users/Enf/Documents/QuartusProjects/Projeto1_PHI/ULA/decrementador.vhd Line: UNKNOWN
-noforce sim:/ula/sel
-force -freeze sim:/ula/sel 8 0
-quit -sim
-# End time: 16:24:42 on Sep 23,2022, Elapsed time: 0:06:46
-# Errors: 2, Warnings: 0
+run
+run
+# End time: 12:53:58 on Sep 24,2022, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
