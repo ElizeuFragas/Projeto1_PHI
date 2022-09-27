@@ -1,0 +1,140 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\Quartus\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/Waveform.vwf" --testbench_file="C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Sep 26 00:04:29 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/Waveform.vwf --testbench_file=C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/Waveform.vwf.vt
+Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/" ULA -c ULA
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Sep 26 00:04:31 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/ ULA -c ULA
+Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file ULA.vo in folder "C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4629 megabytes
+    Info: Processing ended: Mon Sep 26 00:04:33 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/ULA.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/Quartus/modelsim_ase/win32aloem/vsim -c -do ULA.do
+
+Reading C:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do ULA.do
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:04:34 on Sep 26,2022
+# vlog -work work ULA.vo 
+# -- Compiling module ULA
+# 
+# Top level modules:
+# 	ULA
+
+# End time: 00:04:34 on Sep 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:04:34 on Sep 26,2022
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ULA_vlg_vec_tst
+# 
+# Top level modules:
+# 	ULA_vlg_vec_tst
+# End time: 00:04:34 on Sep 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ULA_vlg_vec_tst 
+# Start time: 00:04:34 on Sep 26,2022
+# Loading work.ULA_vlg_vec_tst
+# Loading work.ULA
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(49)
+#    Time: 90 ns  Iteration: 0  Instance: /ULA_vlg_vec_tst
+# End time: 00:04:35 on Sep 26,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/Waveform.vwf...
+
+Reading C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/ULA.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim/ULA_20220926000435.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

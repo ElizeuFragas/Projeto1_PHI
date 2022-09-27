@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity shift_r is
 	generic(
-		nbits    : integer;
+		nbits    : natural;
 		shift : integer
 	);
 	-- Declação das entradas e saída

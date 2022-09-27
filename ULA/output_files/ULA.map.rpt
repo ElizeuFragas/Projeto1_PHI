@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Sat Sep 24 17:47:58 2022
+Tue Sep 27 01:03:18 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,24 +10,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |ULA
- 10. Parameter Settings for User Entity Instance: multiplex:mux
- 11. Parameter Settings for User Entity Instance: somador:sum
- 12. Parameter Settings for User Entity Instance: subtrator:sub
- 13. Parameter Settings for User Entity Instance: porta_and:p_and
- 14. Parameter Settings for User Entity Instance: porta_or:p_or
- 15. Parameter Settings for User Entity Instance: porta_not:p_not
- 16. Parameter Settings for User Entity Instance: shift_r:shift1
- 17. Parameter Settings for User Entity Instance: shift_l:shift2
- 18. Parameter Settings for User Entity Instance: incrementador:inc
- 19. Parameter Settings for User Entity Instance: decrementador:dec
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -54,20 +37,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 24 17:47:58 2022       ;
+; Analysis & Synthesis Status        ; Failed - Tue Sep 27 01:03:18 2022           ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; ULA                                         ;
+; Top-level Entity Name              ; ULA_tb                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 36                                          ;
-;     Total combinational functions  ; 36                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 16                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -76,7 +59,7 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; ULA                ; ULA                ;
+; Top-level entity name                                                      ; ULA_tb             ; ULA                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -172,253 +155,33 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; shift_l.vhd                      ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd       ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd           ;         ;
-; subtrator.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd     ;         ;
-; somador.vhd                      ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd       ;         ;
-; porta_or.vhd                     ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd      ;         ;
-; porta_not.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd     ;         ;
-; porta_and.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd     ;         ;
-; multiplex.vhd                    ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd     ;         ;
-; incrementador.vhd                ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd ;         ;
-; decrementador.vhd                ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd ;         ;
-; shift_r.vhd                      ; yes             ; User VHDL File  ; C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd       ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimated Total logic elements              ; 36         ;
-;                                             ;            ;
-; Total combinational functions               ; 36         ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 22         ;
-;     -- 3 input functions                    ; 12         ;
-;     -- <=2 input functions                  ; 2          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 30         ;
-;     -- arithmetic mode                      ; 6          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 16         ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; a[1]~input ;
-; Maximum fan-out                             ; 12         ;
-; Total fan-out                               ; 148        ;
-; Average fan-out                             ; 2.18       ;
-+---------------------------------------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+---------------+--------------+
-; |ULA                       ; 36 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |ULA                   ; ULA           ; work         ;
-;    |decrementador:dec|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|decrementador:dec ; decrementador ; work         ;
-;    |multiplex:mux|         ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|multiplex:mux     ; multiplex     ; work         ;
-;    |somador:sum|           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somador:sum       ; somador       ; work         ;
-;    |subtrator:sub|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|subtrator:sub     ; subtrator     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+---------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ULA ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; nbits          ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplex:mux ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; nbits          ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somador:sum ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; nbits          ; 4     ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: subtrator:sub ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; nbits          ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: porta_and:p_and ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; nbits          ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: porta_or:p_or ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; nbits          ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: porta_not:p_not ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; nbits          ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shift_r:shift1 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; nbits          ; 4     ; Signed Integer                     ;
-; shift          ; 1     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shift_l:shift2 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; nbits          ; 4     ; Signed Integer                     ;
-; shift          ; 1     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: incrementador:inc ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; nbits          ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decrementador:dec ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; nbits          ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 16                          ;
-; cycloneiii_lcell_comb ; 36                          ;
-;     arith             ; 6                           ;
-;         3 data inputs ; 6                           ;
-;     normal            ; 30                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 22                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.30                        ;
-; Average LUT depth     ; 4.66                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:02     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Sep 24 17:47:23 2022
+    Info: Processing started: Tue Sep 27 01:02:53 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
-Info (12021): Found 2 design units, including 1 entities, in source file shift_l.vhd
-    Info (12022): Found design unit 1: shift_l-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 16
-    Info (12023): Found entity 1: shift_l File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_tb.vhd
-    Info (12022): Found design unit 1: main_tb-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 9
-    Info (12023): Found entity 1: main_tb File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 6
+    Info (12022): Found design unit 1: ULA_tb-test File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 10
+    Info (12023): Found entity 1: ULA_tb File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file shift_l.vhd
+    Info (12022): Found design unit 1: shift_l-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 17
+    Info (12023): Found entity 1: shift_l File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-op File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 16
     Info (12023): Found entity 1: ULA File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file subtrator.vhd
-    Info (12022): Found design unit 1: subtrator-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd Line: 15
-    Info (12023): Found entity 1: subtrator File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd Line: 6
+    Info (12022): Found design unit 1: subtrator-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd Line: 16
+    Info (12023): Found entity 1: subtrator File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
     Info (12022): Found design unit 1: somador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd Line: 15
     Info (12023): Found entity 1: somador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file porta_or.vhd
-    Info (12022): Found design unit 1: porta_or-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd Line: 16
+    Info (12022): Found design unit 1: porta_or-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd Line: 17
     Info (12023): Found entity 1: porta_or File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file porta_not.vhd
     Info (12022): Found design unit 1: porta_not-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd Line: 15
@@ -436,30 +199,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file decreme
     Info (12022): Found design unit 1: decrementador-hard File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd Line: 15
     Info (12023): Found entity 1: decrementador File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file shift_r.vhd
-    Info (12022): Found design unit 1: shift_r-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 16
+    Info (12022): Found design unit 1: shift_r-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 17
     Info (12023): Found entity 1: shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 5
-Info (12127): Elaborating entity "ULA" for the top level hierarchy
-Info (12128): Elaborating entity "multiplex" for hierarchy "multiplex:mux" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 117
-Info (12128): Elaborating entity "somador" for hierarchy "somador:sum" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 133
-Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:sub" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 141
-Info (12128): Elaborating entity "porta_and" for hierarchy "porta_and:p_and" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 149
-Info (12128): Elaborating entity "porta_or" for hierarchy "porta_or:p_or" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 157
-Info (12128): Elaborating entity "porta_not" for hierarchy "porta_not:p_not" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 165
-Info (12128): Elaborating entity "shift_r" for hierarchy "shift_r:shift1" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 172
-Info (12128): Elaborating entity "shift_l" for hierarchy "shift_l:shift2" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 181
-Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:inc" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 190
-Info (12128): Elaborating entity "decrementador" for hierarchy "decrementador:dec" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 197
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 36 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Sat Sep 24 17:47:58 2022
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:41
+Error (10381): VHDL Type Mismatch error at ULA_tb.vhd(44): indexed name returns a value whose type does not match "std_logic_vector", the type of the target expression File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 44
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4770 megabytes
+    Error: Processing ended: Tue Sep 27 01:03:18 2022
+    Error: Elapsed time: 00:00:25
+    Error: Total CPU time (on all processors): 00:00:38
 
 

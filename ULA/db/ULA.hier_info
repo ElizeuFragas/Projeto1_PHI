@@ -1,4 +1,7 @@
-|ULA
+|ULA_tb
+
+
+|ULA_tb|ULA:dut
 a[0] => somador:sum.a[0]
 a[0] => subtrator:sub.a[0]
 a[0] => porta_and:p_and.a[0]
@@ -61,7 +64,7 @@ saida[2] <= multiplex:mux.saida[2]
 saida[3] <= multiplex:mux.saida[3]
 
 
-|ULA|multiplex:mux
+|ULA_tb|ULA:dut|multiplex:mux
 a[0] => saida.DATAB
 a[1] => saida.DATAB
 a[2] => saida.DATAB
@@ -136,7 +139,7 @@ saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somador:sum
+|ULA_tb|ULA:dut|somador:sum
 a[0] => Add0.IN4
 a[1] => Add0.IN3
 a[2] => Add0.IN2
@@ -151,7 +154,7 @@ soma[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 soma[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:sub
+|ULA_tb|ULA:dut|subtrator:sub
 a[0] => Add0.IN8
 a[1] => Add0.IN7
 a[2] => Add0.IN6
@@ -166,7 +169,7 @@ sub[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 sub[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|porta_and:p_and
+|ULA_tb|ULA:dut|porta_and:p_and
 a[0] => z.IN0
 a[1] => z.IN0
 a[2] => z.IN0
@@ -181,7 +184,7 @@ z[2] <= z.DB_MAX_OUTPUT_PORT_TYPE
 z[3] <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|porta_or:p_or
+|ULA_tb|ULA:dut|porta_or:p_or
 a[0] => z.IN0
 a[1] => z.IN0
 a[2] => z.IN0
@@ -196,7 +199,7 @@ z[2] <= z.DB_MAX_OUTPUT_PORT_TYPE
 z[3] <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|porta_not:p_not
+|ULA_tb|ULA:dut|porta_not:p_not
 a[0] => a_barra[0].DATAIN
 a[1] => a_barra[1].DATAIN
 a[2] => a_barra[2].DATAIN
@@ -207,7 +210,7 @@ a_barra[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
 a_barra[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|shift_r:shift1
+|ULA_tb|ULA:dut|shift_r:shift1
 a[0] => ~NO_FANOUT~
 a[1] => a_shifted[0].DATAIN
 a[2] => a_shifted[1].DATAIN
@@ -218,7 +221,7 @@ a_shifted[2] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 a_shifted[3] <= <GND>
 
 
-|ULA|shift_l:shift2
+|ULA_tb|ULA:dut|shift_l:shift2
 a[0] => a_shifted[1].DATAIN
 a[1] => a_shifted[2].DATAIN
 a[2] => a_shifted[3].DATAIN
@@ -229,7 +232,7 @@ a_shifted[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
 a_shifted[3] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|incrementador:inc
+|ULA_tb|ULA:dut|incrementador:inc
 a[0] => Add0.IN8
 a[1] => Add0.IN7
 a[2] => Add0.IN6
@@ -240,7 +243,7 @@ incremento[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 incremento[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|decrementador:dec
+|ULA_tb|ULA:dut|decrementador:dec
 a[0] => Add0.IN8
 a[1] => Add0.IN7
 a[2] => Add0.IN6

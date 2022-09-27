@@ -1,0 +1,174 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/modelsim
+Eshift_l
+Z1 w1664058372
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd
+Z6 FC:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd
+l0
+L5
+V3CUL5UeilNNLShXBAn_m92
+!s100 hg7j^zjmO?JWW@C0^0Tc52
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1664060478
+!i10b 1
+Z9 !s108 1664060477.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd|
+Z11 !s107 C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Acomportamento
+R2
+R3
+R4
+DEx4 work 7 shift_l 0 22 3CUL5UeilNNLShXBAn_m92
+l19
+L17
+Vb>2[KMl]TP^]_o;[;EVBA2
+!s100 [KTaF9X2cmImzzz2DEY8Z0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Esomador
+Z14 w1664058078
+R2
+R3
+R4
+R0
+Z15 8C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd
+Z16 FC:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd
+l0
+L6
+VKUY2U<Dze<g5Al7o[nY_92
+!s100 `D8IMV>YzdQP<8B`2Tbf51
+R7
+31
+Z17 !s110 1664060479
+!i10b 1
+Z18 !s108 1664060479.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd|
+Z20 !s107 C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd|
+!i113 1
+R12
+R13
+Ahard
+R2
+R3
+R4
+DEx4 work 7 somador 0 22 KUY2U<Dze<g5Al7o[nY_92
+l19
+L15
+VPMcofXkcodmHA2Z5i7YMz1
+!s100 `T_7mFO?A[Tj4PIT:HYC41
+R7
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Esubtrator
+Z21 w1664057382
+R2
+R3
+R4
+R0
+Z22 8C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd
+Z23 FC:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd
+l0
+L5
+VMb?GYobGU=P2K9O^ES4I>2
+!s100 EXWeUZ:SZl5hPeTVMmaKb1
+R7
+31
+R17
+!i10b 1
+Z24 !s108 1664060478.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd|
+Z26 !s107 C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd|
+!i113 1
+R12
+R13
+Ahard
+R2
+R3
+R4
+DEx4 work 9 subtrator 0 22 Mb?GYobGU=P2K9O^ES4I>2
+l20
+L16
+V62JE69HHjOJ_@Wj<SaWB73
+!s100 PQh5:6i2lH:k>KY7=h=i>1
+R7
+31
+R17
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Eula
+Z27 w1664058550
+R2
+R3
+R4
+R0
+Z28 8C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd
+Z29 FC:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd
+l0
+L5
+V17@ZkYHESF;4C@3=Lihoe0
+!s100 5Z^Z]gz;?kD06dJ<;<PM>3
+R7
+31
+R8
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd|
+Z31 !s107 C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd|
+!i113 1
+R12
+R13
+Aop
+R2
+R3
+R4
+DEx4 work 3 ula 0 22 17@ZkYHESF;4C@3=Lihoe0
+l116
+L16
+VFaJ2Bg5QE6IcE?^1W]fzn2
+!s100 1f3kQW;3>Y:c1:Tlo50>X3
+R7
+31
+R8
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R12
+R13

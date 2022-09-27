@@ -4,11 +4,11 @@ use ieee.numeric_std.all;
 
 entity ULA is 
 
-	generic( nbits : integer := 4);
+	generic( nbits : natural := 4);
 	-- Declação das entradas e saída
 	port(
 			a, b  : in std_logic_vector(nbits-1 downto 0);
-			sel   : in natural range 0 to 8;
+			sel   : in std_logic_vector(nbits-1 downto 0);
 			saida	: out std_logic_vector(nbits-1 downto 0)
 	);
 end entity;
@@ -19,16 +19,16 @@ architecture op of ULA is
 	-------------------------------------------------------------------------
 	component multiplex 
 	
-	generic ( nbits : integer := 4); --numero de bits
+	generic ( nbits : natural ); --numero de bits
 	port(
 			a, b, c, d, e, f, g, h, i : in std_logic_vector(nbits-1 downto 0);
-			sel 		 	      		  : in natural range 0 to 8;
+			sel 		 	      		  : in std_logic_vector(nbits-1 downto 0);
 			saida     	        		  : out std_logic_vector(nbits-1 downto 0)
 	);
 	end component;
 	---------------------------------------------------------------------------
 	component somador is 
-	generic ( nbits   : integer := 4);
+	generic ( nbits   : natural );
 		
 	port(
 			a, b : in  std_logic_vector(nbits-1 downto 0);
@@ -38,7 +38,7 @@ architecture op of ULA is
 	--------------------------------------------------------------------------
 	component subtrator 
 		
-	generic( nbits : natural := 4);
+	generic( nbits : natural );
 	port(
 		 	a, b : in  std_logic_vector(nbits-1 downto 0);
 		 	sub  : out std_logic_vector(nbits-1 downto 0)
@@ -47,7 +47,7 @@ architecture op of ULA is
 	-----------------------------------------------------------------------	
 	component porta_and 
 	
-	generic ( nbits : integer := 4);
+	generic ( nbits : natural );
 	port(
 			a, b : in std_logic_vector(nbits-1 downto 0);
 			z	  : out std_logic_vector(nbits-1 downto 0)
@@ -56,7 +56,7 @@ architecture op of ULA is
 	------------------------------------------------------------------------
 	component porta_or 
 
-	generic ( nbits : integer := 4);
+	generic ( nbits : natural );
 	port(
 			a, b : in std_logic_vector(nbits-1 downto 0);
 			z	  : out std_logic_vector(nbits-1 downto 0)
@@ -65,7 +65,7 @@ architecture op of ULA is
 	end component;
     -------------------------------------------------------------------------
 	component porta_not is 
-	generic( nbits : natural := 4);
+	generic( nbits : natural );
 		
 	port(
 		 	a 		  : in  std_logic_vector(nbits-1 downto 0);
@@ -75,8 +75,8 @@ architecture op of ULA is
 	----------------------------------------------------------------------------
 	component shift_r is
 		generic(
-			nbits : integer := 4;
-			shift : integer := 1
+			nbits : natural;
+			shift : integer
 		);
 		port(
 			a 			 : in std_logic_vector(nbits-1 downto 0);
@@ -86,8 +86,8 @@ architecture op of ULA is
 	----------------------------------------------------------------------------
 	component shift_l is
 		generic(
-			nbits     : integer := 4;
-			shift : integer := 1
+			nbits     : natural;
+			shift : integer
 		);
 		port(
 			a 			 : in std_logic_vector(nbits-1 downto 0);
@@ -96,7 +96,7 @@ architecture op of ULA is
 	end component;
 	----------------------------------------------------------------------------
 	component incrementador is 
-	generic( nbits : natural := 4 );
+	generic( nbits : natural );
 			
 	port(
 			a          : in  std_logic_vector(nbits-1 downto 0);
@@ -105,7 +105,7 @@ architecture op of ULA is
 	end component;
 	----------------------------------------------------------------------------
 	component decrementador is 
-	generic( nbits : natural := 4 );
+	generic( nbits : natural );
 	
 	port(
 			a          : in  std_logic_vector(nbits-1 downto 0);

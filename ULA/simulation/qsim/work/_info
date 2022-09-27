@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/simulation/qsim
+Eula
+Z1 w1664161264
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z4 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 e`^h93R^CdmMEVe0e1VU_3
+Z5 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx10 cycloneive 21 cycloneive_components 0 22 Q;lLU[K?fTJPSa^YaZf>B3
+R0
+Z9 8ULA.vho
+Z10 FULA.vho
+l0
+L38
+VhO7^G5mZF;7Y[z;9]UcbI1
+!s100 Jn;33]bUNzei4mdBNodVA0
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1664161265
+!i10b 1
+Z13 !s108 1664161265.000000
+Z14 !s90 -work|work|ULA.vho|
+Z15 !s107 ULA.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 3 ula 0 22 hO7^G5mZF;7Y[z;9]UcbI1
+l120
+L47
+VXZLC7LNYSOJdK^zSlZScY3
+!s100 ]PhTRSYWz<iHP7@gJTOZm0
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+vULA
+Z18 !s110 1664161474
+!i10b 1
+!s100 AYUknl`4@m<ZY5J]If_V70
+Ih^GUa92X7OH]Do^QI=Y@G1
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1664161472
+8ULA.vo
+FULA.vo
+L0 32
+Z20 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z21 !s108 1664161474.000000
+!s107 ULA.vo|
+!s90 -work|work|ULA.vo|
+!i113 1
+R16
+Z22 tCvgOpt 0
+n@u@l@a
+Eula_vhd_vec_tst
+Z23 w1664161260
+R6
+R7
+R0
+Z24 8Waveform1.vwf.vht
+Z25 FWaveform1.vwf.vht
+l0
+L32
+VjA]6`340`7FfUKW8>3CGk2
+!s100 JmH7VbN<P7=]ZjOT0CiV92
+R11
+32
+R12
+!i10b 1
+R13
+Z26 !s90 -work|work|Waveform1.vwf.vht|
+Z27 !s107 Waveform1.vwf.vht|
+!i113 1
+R16
+R17
+Aula_arch
+R6
+R7
+DEx4 work 15 ula_vhd_vec_tst 0 22 jA]6`340`7FfUKW8>3CGk2
+l49
+L34
+VZ`3mnZDKJM63^7R2ajZ?M3
+!s100 QB7=3U^Q6b>F?fB=YbO?60
+R11
+32
+R12
+!i10b 1
+R13
+R26
+R27
+!i113 1
+R16
+R17
+vULA_vlg_vec_tst
+R18
+!i10b 1
+!s100 Z:iNP9=0SSFL3zoG8CImP0
+IgK2lhzhfQ67WRMCIRM0G>2
+R19
+R0
+w1664161470
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R20
+r1
+!s85 0
+31
+R21
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R16
+R22
+n@u@l@a_vlg_vec_tst

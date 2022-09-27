@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity porta_and is
 	
-	generic ( nbits : integer );
+	generic ( nbits : natural );
 	-- Declação das entradas e saída
 	port(
 	      a, b : in std_logic_vector(nbits-1 downto 0);

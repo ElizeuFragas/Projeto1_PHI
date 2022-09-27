@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity shift_l is
 	generic(
-		nbits     : integer := 4;
-		shift : integer := 1
+		nbits     : natural;
+		shift : integer
 	);
 	-- Declação das entradas e saída
 	port(
