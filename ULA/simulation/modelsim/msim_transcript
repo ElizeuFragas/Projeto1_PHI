@@ -1,4 +1,4 @@
-# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
 # do ULA_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,12 +7,12 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying C:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:01:17 on Sep 24,2022
+# Start time: 21:40:18 on Sep 28,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +20,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity shift_l
 # -- Compiling architecture comportamento of shift_l
-# End time: 20:01:18 on Sep 24,2022, Elapsed time: 0:00:01
+# End time: 21:40:19 on Sep 28,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:01:18 on Sep 24,2022
+# Start time: 21:40:20 on Sep 28,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture op of ULA
-# End time: 20:01:18 on Sep 24,2022, Elapsed time: 0:00:00
+# End time: 21:40:21 on Sep 28,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:01:18 on Sep 24,2022
+# Start time: 21:40:22 on Sep 28,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/subtrator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,11 +44,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity subtrator
 # -- Compiling architecture hard of subtrator
-# End time: 20:01:19 on Sep 24,2022, Elapsed time: 0:00:01
+# End time: 21:40:22 on Sep 28,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:01:19 on Sep 24,2022
+# Start time: 21:40:22 on Sep 28,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/somador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,5 +56,133 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity somador
 # -- Compiling architecture hard of somador
-# End time: 20:01:19 on Sep 24,2022, Elapsed time: 0:00:00
+# End time: 21:40:22 on Sep 28,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:23 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_or.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity porta_or
+# -- Compiling architecture hard of porta_or
+# End time: 21:40:23 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:23 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_not.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity porta_not
+# -- Compiling architecture hard of porta_not
+# End time: 21:40:23 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:23 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/porta_and.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity porta_and
+# -- Compiling architecture hard of porta_and
+# End time: 21:40:23 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:23 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/multiplex.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplex
+# -- Compiling architecture hard of multiplex
+# End time: 21:40:23 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:23 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/incrementador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity incrementador
+# -- Compiling architecture hard of incrementador
+# End time: 21:40:23 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:24 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/decrementador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity decrementador
+# -- Compiling architecture hard of decrementador
+# End time: 21:40:24 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:24 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shift_r
+# -- Compiling architecture comportamento of shift_r
+# End time: 21:40:24 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:40:24 on Sep 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ULA_tb
+# -- Compiling architecture test of ULA_tb
+# End time: 21:40:24 on Sep 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  ULA_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" ULA_tb 
+# Start time: 21:40:25 on Sep 28,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ula_tb(test)
+# Loading work.ula(op)
+# Loading work.multiplex(hard)
+# Loading work.somador(hard)
+# Loading work.subtrator(hard)
+# Loading work.porta_and(hard)
+# Loading work.porta_or(hard)
+# Loading work.porta_not(hard)
+# Loading work.shift_r(comportamento)
+# Loading work.shift_l(comportamento)
+# Loading work.incrementador(hard)
+# Loading work.decrementador(hard)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Enf  Hostname: DESKTOP-N4BIB11  ProcessID: 12996
+#           Attempting to use alternate WLF file "./wlfttezw4z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttezw4z
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 90 ns
+# End time: 21:42:42 on Sep 28,2022, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 2

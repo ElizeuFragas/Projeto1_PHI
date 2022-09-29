@@ -1,5 +1,5 @@
-Analysis & Synthesis report for ULA
-Tue Sep 27 01:03:18 2022
+Analysis & Elaboration report for ULA
+Wed Sep 28 21:27:15 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -7,10 +7,21 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |ULA
+  5. Parameter Settings for User Entity Instance: multiplex:mux
+  6. Parameter Settings for User Entity Instance: somador:sum
+  7. Parameter Settings for User Entity Instance: subtrator:sub
+  8. Parameter Settings for User Entity Instance: porta_and:p_and
+  9. Parameter Settings for User Entity Instance: porta_or:p_or
+ 10. Parameter Settings for User Entity Instance: porta_not:p_not
+ 11. Parameter Settings for User Entity Instance: shift_r:shift1
+ 12. Parameter Settings for User Entity Instance: shift_l:shift2
+ 13. Parameter Settings for User Entity Instance: incrementador:inc
+ 14. Parameter Settings for User Entity Instance: decrementador:dec
+ 15. Analysis & Elaboration Settings
+ 16. Analysis & Elaboration Messages
 
 
 
@@ -35,12 +46,12 @@ agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Sep 27 01:03:18 2022           ;
+; Analysis & Elaboration Status      ; Successful - Wed Sep 28 21:27:14 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; ULA_tb                                      ;
+; Top-level Entity Name              ; ULA                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -54,12 +65,140 @@ agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ULA ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; nbits          ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplex:mux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; nbits          ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:sum ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; nbits          ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: subtrator:sub ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; nbits          ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: porta_and:p_and ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; nbits          ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: porta_or:p_or ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; nbits          ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: porta_not:p_not ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; nbits          ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_r:shift1 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; nbits          ; 4     ; Signed Integer                     ;
+; shift          ; 1     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_l:shift2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; nbits          ; 4     ; Signed Integer                     ;
+; shift          ; 1     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: incrementador:inc ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; nbits          ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decrementador:dec ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; nbits          ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; ULA_tb             ; ULA                ;
+; Top-level entity name                                                      ; ULA                ; ULA                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -139,35 +278,19 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Sep 27 01:02:53 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
+    Info: Processing started: Wed Sep 28 21:26:39 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 2 design units, including 1 entities, in source file ula_tb.vhd
-    Info (12022): Found design unit 1: ULA_tb-test File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 10
-    Info (12023): Found entity 1: ULA_tb File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 7
+    Info (12022): Found design unit 1: ULA_tb-test File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 9
+    Info (12023): Found entity 1: ULA_tb File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file shift_l.vhd
     Info (12022): Found design unit 1: shift_l-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 17
     Info (12023): Found entity 1: shift_l File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_l.vhd Line: 5
@@ -201,11 +324,21 @@ Info (12021): Found 2 design units, including 1 entities, in source file decreme
 Info (12021): Found 2 design units, including 1 entities, in source file shift_r.vhd
     Info (12022): Found design unit 1: shift_r-comportamento File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 17
     Info (12023): Found entity 1: shift_r File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/shift_r.vhd Line: 5
-Error (10381): VHDL Type Mismatch error at ULA_tb.vhd(44): indexed name returns a value whose type does not match "std_logic_vector", the type of the target expression File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA_tb.vhd Line: 44
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4770 megabytes
-    Error: Processing ended: Tue Sep 27 01:03:18 2022
-    Error: Elapsed time: 00:00:25
-    Error: Total CPU time (on all processors): 00:00:38
+Info (12127): Elaborating entity "ULA" for the top level hierarchy
+Info (12128): Elaborating entity "multiplex" for hierarchy "multiplex:mux" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 117
+Info (12128): Elaborating entity "somador" for hierarchy "somador:sum" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 133
+Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:sub" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 141
+Info (12128): Elaborating entity "porta_and" for hierarchy "porta_and:p_and" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 149
+Info (12128): Elaborating entity "porta_or" for hierarchy "porta_or:p_or" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 157
+Info (12128): Elaborating entity "porta_not" for hierarchy "porta_not:p_not" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 165
+Info (12128): Elaborating entity "shift_r" for hierarchy "shift_r:shift1" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 172
+Info (12128): Elaborating entity "shift_l" for hierarchy "shift_l:shift2" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 181
+Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:inc" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 190
+Info (12128): Elaborating entity "decrementador" for hierarchy "decrementador:dec" File: C:/Users/Enf/Documents/QuartusProjects/Projeto1PHI/ULA/ULA.vhd Line: 197
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Wed Sep 28 21:27:15 2022
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:40
 
 

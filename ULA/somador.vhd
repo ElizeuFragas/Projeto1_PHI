@@ -14,12 +14,12 @@ end entity;
 -- Declação da arquitetura
 architecture hard of somador is
 	
-	signal soma_sig: signed(nbits-1 downto 0);
+	signal soma_sig: unsigned(nbits-1 downto 0);
 	
 begin
 
-	-- convert para signed e faz a conta
-	soma_sig <= signed(a) + signed(b);
+	-- convert para unsigned e faz a conta
+	soma_sig <= unsigned(a) + unsigned(b);
 	
 	-- convete para std_logic
 	soma <= std_logic_vector(soma_sig);
